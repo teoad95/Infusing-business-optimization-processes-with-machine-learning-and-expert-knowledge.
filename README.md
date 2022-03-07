@@ -53,5 +53,5 @@ The experiments have been done into a notebook file and it is suggested to run i
 ### Future work
 
 As future work, the presented work can be extended to:
--- Focus on model’s interpretability - explainability.  Give suggestions for the input in order to reduce the total waste percentage.
--- Construct a reinforcement learning agent which will use any of the alreadyconstructed model’s as a reward function.  This agent will act as a planner
+- Focus on model’s interpretability/explainability.  Give suggestions for the input in order to reduce the total waste percentage.
+- Construct a reinforcement learning agent which will use any of the alreadyconstructed model’s as a reward function.  This agent will act as a planner
