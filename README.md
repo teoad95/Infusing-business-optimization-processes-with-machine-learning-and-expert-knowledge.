@@ -31,3 +31,27 @@ The datasets contains 50 runs for each possible out of 9 combination of one sele
 Under datasets folder there are two files:
 - **StatisticalDataset**, each row represents a run, contains statistical information for the orders included in the selected run
 - **ExtendedStatisticalDataset**, each row represents a run, contains statistical information for the orders included in the selected run and also contains statistical information for the orders that exist in each 1/10 of the input jumbo.
+
+
+### Experiments
+
+The experiments have been done into a notebook file and it is suggested to run it in google colab. No extra action is necessary to be done. The structure of the experiments is the following:
+
+- Data visualization
+- Simple regression experiments using each dataset
+- Classification experiments using each dataset
+- Exploratory regression experimets using each dataset
+- Generalization tests
+
+### Conclusion
+
+- **Statistical vs extended dataset** Experiments using both datasets achieved the goal.  The performance was al-most the same with the statistical dataset to perform slightly better in somecases and the extended statistical to some others.  The extra information passedinto the models,  did not seemed to help them and also made them harder toget explained.  The correlated position of the common fields was not the same,meaning that the models constructed using the second dataset are not the sameas the ones constructed with the first, fed with extra information.  Statisticaldataset’s fields seemed enough to perform predictions
+- **ML vs DL** Both using ML and DL the goal achieved.  DL performed better than the MLwhile the second provides easier explainability - interpretability of the results.In case it is not necessary to focus on the explanation of the prediction, or wedo not want to construct a system which will also give suggestion, DL model issuggested to get used, while in the other cases, ML should used.
+- **Interpretability** Interpretability  by  its  self  is  a  research  subject.   For  the  experiments  of  thecontext of this thesis, the interpretability only of the machine learning models was examined.  The explanation of the prediction of the models,  increase ourconfidence to use them, and help us to understand how the models work.
+- **Generalization** The generalization of the models that achieved the goal tested also by takingadvantage of the way the dataset constructed (table 1).  Out of the six teams ofruns, tries made, by leaving one of them left out, and by training models withthe other five.  The experiments showed that the ones trained with the teamswhich contains reels with lower width values can be good predictor for the oneswith greater values.  Especially when a model gets trained from a combinationof big and small teams it performs better.  Also the normalization of the data,helped the models to generalize better.
+
+### Future work
+
+As future work, the presented work can be extended to:
+-- Focus on model’s interpretability - explainability.  Give suggestions for the input in order to reduce the total waste percentage.
+-- Construct a reinforcement learning agent which will use any of the alreadyconstructed model’s as a reward function.  This agent will act as a planner
