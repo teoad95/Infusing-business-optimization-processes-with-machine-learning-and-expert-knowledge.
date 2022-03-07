@@ -25,3 +25,9 @@ Datasets can be found under \Dataset folder. There are 2 different datasets. Bot
 |1000-2000|A|B|
 |2000-3500|C|D|
 |3500-5000|E|F|
+
+The datasets contains 50 runs for each possible out of 9 combination of one selection from each row. 
+
+Under datasets folder there are two files:
+- **StatisticalDataset**, each row represents a run, contains statistical information for the orders included in the selected run
+- **ExtendedStatisticalDataset**, each row represents a run, contains statistical information for the orders included in the selected run and also contains statistical information for the orders that exist in each 1/10 of the input jumbo.
